@@ -1,5 +1,11 @@
 <template>
 <div>
+    <select v-model="jour">
+      <option>SAMEDI</option>
+      <option>LUNDI</option>
+      <option>MERCREDI</option>
+    </select>
+
      <button @click="AjoutAuTableau">Afficher</button>
    <!--  <div v-for="jour in lotoJson" v-bind:key="jour.index">
       <div v-if="jour.jour_de_tirage === 'SAMEDI'">
